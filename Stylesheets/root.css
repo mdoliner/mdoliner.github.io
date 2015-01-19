@@ -23,6 +23,8 @@ ul {
   clear: both;
 }
 
+/* Header */
+
 header {
   margin-top: 5px;
 }
@@ -50,6 +52,10 @@ span.logo ul {
   padding-left: 10px;
 }
 
+li.surtitle {
+  color: #95A5A6;
+}
+
 ul.nav {
   float: right;
   margin-right: 5px;
@@ -60,9 +66,33 @@ ul.nav {
 
 ul.nav li {
   float: left;
-  padding-left: 15px;
+  margin-left: 15px;
+  display: block;
 }
 
-li.surtitle {
-  color: #95A5A6;
+li a.active {
+  border: 2px solid #95A5A6;
+  border-radius: 50%;
+  padding: 30px 10px;
+}
+
+/* Content */
+
+span.content {
+  display: block;
+  margin-left: 25px;
+}
+
+span.root {
+  text-align: center;
+}
+
+span.root h1 {
+  font-size: 56px;
+  font-weight: bold;
+  padding: 140px 0 60px 0;
+}
+
+span.root pre {
+  font-size: 18px;
 }
