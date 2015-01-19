@@ -2,6 +2,7 @@
   <head>
     <link href="../Stylesheets/root.css" type="text/css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <script src="../Javascripts/jquery-2.1.3.min.js"></script>
     <title>Michael Doliner - Web Developer</title>
   </head>
   <body>
@@ -14,24 +15,39 @@
         </ul>
       </span>
       <ul class="nav">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#" id="root-nav">Home</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="#" id="resume-nav">Resume</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </header>
-    <span class="content" id="content">
-      <span class="root">
-        <h1>Welcome!</h1>
-        <pre>
-  I'm a web developer with experience in Rails, Backbone, and the occasional cascading stylesheet.
-
-  Feel free to browse around and check out some of my work.
-
-  I hope you enjoy!
-        </pre>
+      <span class="content" id="content">
       </span>
-    </span>
+
+      <span id="templates">
+        <span class="root" id="root">
+          <h1>Welcome!</h1>
+          <pre>
+Michael Doliner is a web developer with experience in Rails, Backbone, and the occasional cascading stylesheet.
+
+Feel free to browse around and check out some of my work.
+
+I hope you enjoy!
+          </pre>
+        </span>
+        <span class="resume" id="resume">
+          <h1>THIS MY RESUME</h1>
+        </span>
+      </span>
+    <script>
+      $(document).ready(function () {
+        $("#root-nav").on("click", function () {
+          $("#content").html($("#root").clone());
+        });
+        $("#resume-nav").on("click", function () {
+          $("#content").html($("#resume").clone());
+        });
+      });
+    </script>
   </body>
 </html>

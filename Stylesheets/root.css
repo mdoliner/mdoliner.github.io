@@ -23,6 +23,11 @@ ul {
   clear: both;
 }
 
+#templates {
+  visibility: hidden;
+  display: none;
+}
+
 /* Header */
 
 header {
@@ -90,7 +95,7 @@ span.root {
 span.root h1 {
   font-size: 56px;
   font-weight: bold;
-  padding: 140px 0 60px 0;
+  padding: 140px 0 50px 0;
 }
 
 span.root pre {
