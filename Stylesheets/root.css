@@ -1,0 +1,68 @@
+html, body, header, img, ul, li, a, p, h1, pre {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: 'Arvo';
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  margin-top: 5px;
+}
+
+span.logo {
+  margin-left: 5px;
+  float: left;
+  height: 120px;
+  display: block;
+  overflow: hidden;
+}
+
+img.avatar {
+  float: left;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #E8EDE1;
+}
+
+span.logo ul {
+  font-weight: bold;
+  font-size: 36px;
+  float: right;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+ul.nav {
+  float: right;
+  margin-right: 5px;
+  font-size: 24px;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+ul.nav li {
+  float: left;
+  padding-left: 15px;
+}
+
+li.surtitle {
+  color: #95A5A6;
+}
