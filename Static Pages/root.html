@@ -18,7 +18,7 @@
         <li><a href="#" id="root-nav">Home</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#" id="resume-nav">Resume</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" id="contact-nav">Contact</a></li>
       </ul>
     </header>
       <span class="content" id="content">
@@ -36,7 +36,18 @@ I hope you enjoy!
           </pre>
         </span>
         <span class="resume" id="resume">
-          <h1>THIS MY RESUME</h1>
+          <h2>Resume</h2>
+        </span>
+        <span class="contact" id="contact">
+          <pre>
+<b>Michael Doliner</b> can be reached at:
+
+msd83@cornell.edu
+or
+732 - 757 - 8136
+
+Hope to hear from you soon!
+          </pre>
         </span>
       </span>
     <script>
@@ -46,6 +57,9 @@ I hope you enjoy!
         });
         $("#resume-nav").on("click", function () {
           $("#content").html($("#resume").clone());
+        });
+        $("#contact-nav").on("click", function () {
+          $("#content").html($("#contact").clone());
         });
       });
     </script>

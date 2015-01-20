@@ -1,4 +1,4 @@
-html, body, header, img, ul, li, a, p, h1, pre {
+html, body, header, img, ul, li, a, p, h1, pre, b {
   padding: 0;
   margin: 0;
   outline: 0;
@@ -15,6 +15,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+b {
+  font-weight: bold;
 }
 
 .group:after {
@@ -34,7 +38,7 @@ header {
   margin-top: 5px;
 }
 
-span.logo {
+.logo {
   margin-left: 5px;
   float: left;
   height: 120px;
@@ -42,14 +46,14 @@ span.logo {
   overflow: hidden;
 }
 
-img.avatar {
+.avatar {
   float: left;
   width: 100px;
   border-radius: 50%;
   border: 2px solid #E8EDE1;
 }
 
-span.logo ul {
+.logo ul {
   font-weight: bold;
   font-size: 36px;
   float: right;
@@ -57,11 +61,11 @@ span.logo ul {
   padding-left: 10px;
 }
 
-li.surtitle {
+.surtitle {
   color: #95A5A6;
 }
 
-ul.nav {
+.nav {
   float: right;
   margin-right: 5px;
   font-size: 24px;
@@ -69,13 +73,13 @@ ul.nav {
   padding-right: 20px;
 }
 
-ul.nav li {
+.nav li {
   float: left;
   margin-left: 15px;
   display: block;
 }
 
-li a.active {
+li .active {
   border: 2px solid #95A5A6;
   border-radius: 50%;
   padding: 30px 10px;
@@ -83,21 +87,34 @@ li a.active {
 
 /* Content */
 
-span.content {
+.content {
   display: block;
-  margin-left: 25px;
 }
 
-span.root {
-  text-align: center;
-}
+/* Root */
 
-span.root h1 {
+h1 {
   font-size: 56px;
   font-weight: bold;
   padding: 140px 0 50px 0;
+  text-align: center;
 }
 
-span.root pre {
+pre {
   font-size: 18px;
+  text-align: center;
+}
+
+/* Resume */
+
+h2 {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* About */
+.contact pre {
+  padding-top: 140px;
+  font-size: 24px;
 }
