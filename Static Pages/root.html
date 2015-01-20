@@ -16,7 +16,7 @@
       </span>
       <ul class="nav">
         <li><a href="#" id="root-nav">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#" id="portfolio-nav">Portfolio</a></li>
         <li><a href="#" id="resume-nav">Resume</a></li>
         <li><a href="#" id="contact-nav">Contact</a></li>
       </ul>
@@ -49,6 +49,14 @@ or
 Hope to hear from you soon!
           </pre>
         </span>
+        <span class="portfolio" id="portfolio">
+          <h2>Portfolio</h2>
+          <ul class="portfolio-list">
+            <li><a href="http://www.idiotclone.com" target="Idiot">
+              <img src="../Images/genius_screenshot.png"/>
+            </a></li>
+          </ul>
+        </span>
       </span>
     <script>
       $(document).ready(function () {
@@ -57,6 +65,9 @@ Hope to hear from you soon!
         });
         $("#resume-nav").on("click", function () {
           $("#content").html($("#resume").clone());
+        });
+        $("#portfolio-nav").on("click", function () {
+          $("#content").html($("#portfolio").clone());
         });
         $("#contact-nav").on("click", function () {
           $("#content").html($("#contact").clone());
