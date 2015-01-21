@@ -3,6 +3,7 @@
     <link href="../Stylesheets/root.css" type="text/css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <script src="../Javascripts/jquery-2.1.3.min.js"></script>
+    <script src="../Javascripts/root.js"></script>
     <title>Michael Doliner - Web Developer</title>
   </head>
   <body>
@@ -60,29 +61,18 @@ Hope to hear from you soon!
       </span>
     <script>
       $(document).ready(function () {
-        $(".logo").animate({"opacity": "1"}, 2000, "swing", function () {
-          $("#root-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
-            $("#portfolio-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
-              $("#resume-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
-                $("#contact-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
-                  $("#content").html($("#root").clone());
-                  $("#content").animate({"opacity": "1"}, 1000);
-                })
-              })
-            })
-          })
-        });
+        MD.startUp();
         $("#root-nav").on("click", function () {
-          $("#content").html($("#root").clone());
+          MD.switchContent("#root");
         });
         $("#portfolio-nav").on("click", function () {
-          $("#content").html($("#portfolio").clone());
+          MD.switchContent("#portfolio");
         });
         $("#resume-nav").on("click", function () {
-          $("#content").html($("#resume").clone());
+          MD.switchContent("#resume");
         });
         $("#contact-nav").on("click", function () {
-          $("#content").html($("#contact").clone());
+          MD.switchContent("#contact");
         });
       });
     </script>

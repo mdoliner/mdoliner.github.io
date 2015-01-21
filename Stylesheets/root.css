@@ -97,7 +97,6 @@ li .active {
 .content {
   display: block;
   opacity: 0;
-  -webkit-transition: opacity 1s;
 }
 
 /* Root */
