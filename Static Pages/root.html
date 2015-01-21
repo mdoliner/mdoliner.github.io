@@ -60,14 +60,26 @@ Hope to hear from you soon!
       </span>
     <script>
       $(document).ready(function () {
+        $(".logo").animate({"opacity": "1"}, 2000, "swing", function () {
+          $("#root-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
+            $("#portfolio-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
+              $("#resume-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
+                $("#contact-nav").animate({"top": "0", "opacity": "1"}, 450, "swing", function () {
+                  $("#content").html($("#root").clone());
+                  $("#content").animate({"opacity": "1"}, 1000);
+                })
+              })
+            })
+          })
+        });
         $("#root-nav").on("click", function () {
           $("#content").html($("#root").clone());
         });
-        $("#resume-nav").on("click", function () {
-          $("#content").html($("#resume").clone());
-        });
         $("#portfolio-nav").on("click", function () {
           $("#content").html($("#portfolio").clone());
+        });
+        $("#resume-nav").on("click", function () {
+          $("#content").html($("#resume").clone());
         });
         $("#contact-nav").on("click", function () {
           $("#content").html($("#contact").clone());

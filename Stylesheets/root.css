@@ -44,6 +44,7 @@ header {
   height: 120px;
   display: block;
   overflow: hidden;
+  opacity: 0;
 }
 
 .avatar {
@@ -79,6 +80,12 @@ header {
   display: block;
 }
 
+.nav a {
+  opacity: 0;
+  position: relative;
+  top: -30px;
+}
+
 li .active {
   border: 2px solid #95A5A6;
   border-radius: 50%;
@@ -89,6 +96,8 @@ li .active {
 
 .content {
   display: block;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
 }
 
 /* Root */
@@ -142,7 +151,7 @@ h2 {
 
 .portfolio-list li:hover {
   opacity: 1;
-  box-shadow: 4px 4px 60px 0 #6C7A89;
+  box-shadow: 3px 3px 60px 0 #6C7A89;
   width: 470px;
   height: 320px;
   margin: -10px 0 0 -10px;
