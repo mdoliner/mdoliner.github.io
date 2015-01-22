@@ -1,4 +1,4 @@
-html, body, header, img, ul, li, a, p, h1, pre, b {
+html, body, header, img, ul, li, a, p, h1, pre, b, small {
   padding: 0;
   margin: 0;
   outline: 0;
@@ -164,4 +164,16 @@ h2 {
 .contact pre {
   padding-top: 140px;
   font-size: 24px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  margin-bottom: 10px;
+  color: #6C7A89;
+  opacity: 0;
 }
