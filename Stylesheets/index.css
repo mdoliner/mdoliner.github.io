@@ -82,7 +82,15 @@ header {
   float: left;
   margin-left: 15px;
   display: block;
+  color: #95A5A6;
 }
+
+.nav a {
+  display: inline-block;
+  margin-top: 0;
+  -webkit-transition: font .25s, margin-top .25s;
+}
+
 
 .nav a {
   opacity: 0;
@@ -91,9 +99,9 @@ header {
 }
 
 li .active {
-  border: 2px solid #95A5A6;
-  border-radius: 50%;
-  padding: 30px 10px;
+  font-size: 32px;
+  margin-top: -8px;
+  color: black;
 }
 
 /* Content */

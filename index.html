@@ -16,7 +16,7 @@
         </ul>
       </span>
       <ul class="nav">
-        <li><a href="#" id="root-nav">Home</a></li>
+        <li><a href="#" id="root-nav" class="active">Home</a></li>
         <li><a href="#" id="portfolio-nav">Portfolio</a></li>
         <li><a href="#" id="resume-nav">Resume</a></li>
         <li><a href="#" id="contact-nav">Contact</a></li>
@@ -72,16 +72,29 @@ Hope to hear from you soon!
     <script>
       $(document).ready(function () {
         MD.startUp();
+        var active = $("#root-nav");
         $("#root-nav").on("click", function () {
+          active.removeClass("active");
+          active = $("#root-nav");
+          active.addClass("active");
           MD.switchContent("#root");
         });
         $("#portfolio-nav").on("click", function () {
+          active.removeClass("active");
+          active = $("#portfolio-nav");
+          active.addClass("active");
           MD.switchContent("#portfolio");
         });
         $("#resume-nav").on("click", function () {
+          active.removeClass("active");
+          active = $("#resume-nav");
+          active.addClass("active");
           MD.switchContent("#resume");
         });
         $("#contact-nav").on("click", function () {
+          active.removeClass("active");
+          active = $("#contact-nav");
+          active.addClass("active");
           MD.switchContent("#contact");
         });
       });
