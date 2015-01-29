@@ -19,12 +19,18 @@
           })
         })
       })
-    }, 550)
+    }, 550);
+    MD.active = $("#root-nav");
   };
+
+
 
   MD.switchContent = function (selector) {
     if (MD.currentSel !== selector) {
+      MD.active.removeClass("active");
       MD.currentSel = selector;
+      MD.active = $(selector + "-nav");
+      MD.active.addClass("active");
       $("#content").animate({"opacity": "0"}, 400, function () {
         $("#content").html($(selector).clone());
         $("#content").animate({"opacity": "1"}, 400);
