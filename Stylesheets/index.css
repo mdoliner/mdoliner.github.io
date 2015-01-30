@@ -37,6 +37,10 @@ body {
   height: 1000px;
 }
 
+img {
+  width: 100%;
+}
+
 /* Header */
 
 header {
@@ -84,12 +88,17 @@ header {
   margin-left: 15px;
   display: block;
   color: #95A5A6;
+  transition: color .25s;
+}
+
+.nav li:hover {
+  color: black;
 }
 
 .nav a {
   display: inline-block;
   margin-top: 0;
-  -webkit-transition: font .25s, margin-top .25s;
+  -webkit-transition: font .4s, margin-top .4s;
 }
 
 
@@ -181,10 +190,6 @@ object {
   min-height: 320px;
 }
 
-.project-screenshot {
-  width: 100%;
-}
-
 .portfolio-list li:hover {
   opacity: 1;
   box-shadow: 3px 3px 60px 0 #6C7A89;
@@ -244,16 +249,26 @@ object {
   padding: 12px 0;
 }
 
-.portfolio-git img {
-  width: 100%;
-}
-
 .portfolio-git:hover {
   background: rgba(255, 255, 255, .8);
 }
 
 .portfolio-list li:hover .portfolio-git {
   opacity: 1;
+}
+
+.complete-git {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 240px;
+  border-radius: 50%;
+  padding: 12px 0;
+  background: rgba(255, 255, 255, .5);
+}
+
+.complete-git:hover {
+  background: rgba(255, 255, 255, .8);
 }
 
 
