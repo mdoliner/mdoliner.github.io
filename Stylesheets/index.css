@@ -169,7 +169,7 @@ object {
   -webkit-transition: opacity .5s, box-shadow .2s, width .5s, height .5s, margin .5s;
 }
 
-.portfolio-list a {
+.portfolio-live {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -177,8 +177,12 @@ object {
   overflow: hidden;
 }
 
-.portfolio-list img {
+.project-screenshot {
   min-height: 320px;
+}
+
+.project-screenshot {
+  width: 100%;
 }
 
 .portfolio-list li:hover {
@@ -198,10 +202,6 @@ object {
 
 .portfolio-list li:nth-child(3):hover {
   margin: 0 0 0 -20px;
-}
-
-.portfolio-list img {
-  width: 100%;
 }
 
 .project-name {
@@ -226,6 +226,34 @@ object {
   -webkit-text-stroke: 1px white;
   bottom: 0;
   text-align: center;
+}
+
+.portfolio-git {
+  display: block;
+  opacity: 0;
+  position: relative;
+  width: 80px;
+  left: 5px;
+  bottom: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: opacity .5s, background .5s;
+  opacity: .3;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  padding: 12px 0;
+}
+
+.portfolio-git img {
+  width: 100%;
+}
+
+.portfolio-git:hover {
+  background: rgba(255, 255, 255, .8);
+}
+
+.portfolio-list li:hover .portfolio-git {
+  opacity: 1;
 }
 
 
