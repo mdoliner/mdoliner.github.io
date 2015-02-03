@@ -156,6 +156,7 @@ object {
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  width: 830px;
 }
 
 /* Portfolio */
