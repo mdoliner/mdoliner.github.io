@@ -18,7 +18,7 @@ ul {
   list-style: none;
 }
 
-b {
+strong {
   font-weight: bold;
 }
 
@@ -247,12 +247,13 @@ object {
   transition: opacity .5s, background .5s;
   opacity: .3;
   background: rgba(255, 255, 255, .5);
+  border: 3px solid black;
   border-radius: 50%;
   padding: 12px 0;
 }
 
 .portfolio-git:hover {
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, 1);
 }
 
 .portfolio-list li:hover .portfolio-git {
