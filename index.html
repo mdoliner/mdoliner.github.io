@@ -1,108 +1,51 @@
-<html>
-  <head>
-    <link href="Stylesheets/index.css" type="text/css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="icon" type="image/png" href="./favicon.png">
-    <link rel="manifest" href="/android-chrome-manifest.json">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <script src="Javascripts/jquery-2.1.3.min.js"></script>
-    <script src="Javascripts/index.js"></script>
-    <title>Michael Doliner - Web Developer</title>
-  </head>
-  <body>
-    <header class="group">
-      <span class="logo group">
-        <img class="avatar" src="Images/michael-doliner.png"/>
-        <ul>
-          <li>Michael Doliner</li>
-          <li class="surtitle">Web Developer</li>
-        </ul>
-      </span>
-      <ul class="nav">
-        <li><a href="#" id="root-nav" class="active">Home</a></li>
-        <li><a href="#" id="portfolio-nav">Portfolio</a></li>
-        <li><a href="#" id="resume-nav">Resume</a></li>
-        <li><a href="#" id="contact-nav">Contact</a></li>
-      </ul>
-    </header>
-      <span class="content" id="content">
-      </span>
-      <small class="footer">Site Design and Content by Michael Doliner. Please don't steal.</small>
-
-      <span id="templates">
-        <span class="root" id="root">
-          <h1>Welcome!</h1>
-          <pre>
-I am a web developer with experience working as a <strong>Google Software Engineer</strong> and the <strong>Head of Curriculum Design at Codecademy</strong>.
-
-Feel free to browse around and check out some of my personal work.
-
-I hope you enjoy!
-          </pre>
-        </span>
-        <span class="resume" id="resume">
-          <h2>Resume</h2>
-          <a class="resume-download" href="Images/resume_michael_doliner.pdf">Download Resume Here</a>
-          <object data="Images/resume_michael_doliner.pdf" type="application/pdf" width="820px" height="100%">
-
-        </span>
-        <span class="contact" id="contact">
-          <pre>
-<strong>Michael Doliner</strong> can be reached at:
-
-msd83@cornell.edu
-or
-732 - 757 - 8136
-
-Hope to hear from you soon!
-          </pre>
-        </span>
-        <span class="portfolio" id="portfolio">
-          <h2>Portfolio</h2>
-          <ul class="portfolio-list group">
-            <li><a class="portfolio-live" href="http://www.lilwizards.com" target="Lil-Wizards">
-              <h2 class="project-name">Lil' Wizards</h2>
-              <img class="project-screenshot" src="Images/lil_wizards_screenshot.png"/>
-              <h2 class="project-tech">JavaScript | Canvas</h2>
-              <a class="portfolio-git" href="https://github.com/mdoliner/LilWizards"><img src="Images/github.png"/></a>
-            </a></li>
-            <li><a class="portfolio-live" href="https://github.com/mdoliner/Javascript-Data-Structures-and-Algorithms" target="Javascript-Data-Structures-and-Algorithms">
-              <h2 class="project-name">Data Structures and Algorithms</h2>
-              <img class="project-screenshot" src="Images/graph.png"/>
-              <h2 class="project-tech">JavaScript</h2>
-              <a class="portfolio-git" href="https://github.com/mdoliner/Javascript-Data-Structures-and-Algorithms"><img src="Images/github.png"/></a>
-            </a></li>
-            <li><a class="portfolio-live" href="https://github.com/mdoliner/Chess" target="Chess">
-              <h2 class="project-name">Chess</h2>
-              <img class="project-screenshot" src="Images/chess_screenshot.png"/>
-              <h2 class="project-tech">Ruby</h2>
-              <a class="portfolio-git" href="https://github.com/mdoliner/Chess"><img src="Images/github.png"/></a>
-            </a></li>
-            <li><a class="complete-git" href="https://github.com/mdoliner"><img src="Images/github.png"/></a></li>
-          </ul>
-        </span>
-      </span>
-    <script>
-      $(document).ready(function () {
-        MD.startUp();
-        $("#root-nav").on("click", function () {
-          MD.switchContent("#root");
-        });
-        $("#portfolio-nav").on("click", function () {
-          MD.switchContent("#portfolio");
-        });
-        $("#resume-nav").on("click", function () {
-          MD.switchContent("#resume");
-        });
-        $("#contact-nav").on("click", function () {
-          MD.switchContent("#contact");
-        });
-      });
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Michael Doliner</title>
+		<link rel="shortcut icon" href="favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Spectral:200" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="content content--intro">
+				<div class="content__inner">
+					<h2 class="content__title">Michael Doliner</h2>
+					<h3 class="content__subtitle">Web Developer and Educator</h3>
+					<a href="#" class="enter">enter</a>
+				</div>
+				<div class="shape-wrap">
+					<svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
+						<path d="M -44,-50 C -52.71,28.52 15.86,8.186 184,14.69 383.3,22.39 462.5,12.58 638,14 835.5,15.6 987,6.4 1194,13.86 1661,30.68 1652,-36.74 1582,-140.1 1512,-243.5 15.88,-589.5 -44,-50 Z" pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z"></path>
+					</svg>
+				</div>
+			</div><!-- /content -->
+			<div class="content content--fixed">
+				<h2 class="content__title">Public Portfolio</h2>
+					<div class="block" data-fx="1">
+						<span class="block__title">Codecademy</span>
+						<a class="block__link" data-img="img/cc-websites.jpg" rel="noopener noreferrer" target="_blank" href="https://www.codecademy.com/learn/paths/learn-how-to-build-websites">Build Websites Intensive (Engineer, Curriculum Designer)</a>
+						<a class="block__link" data-img="img/cc-react.jpg" rel="noopener noreferrer" target="_blank" href="https://www.codecademy.com/learn/paths/build-web-apps-with-react">Build React Apps Intensive (Engineer, Curriculum Designer)</a>
+						<a class="block__link" data-img="img/cc-express.jpg" rel="noopener noreferrer" target="_blank" href="https://www.codecademy.com/learn/paths/create-a-back-end-app-with-javascript">Build Express Apps Intensive (Engineer, Curriculum Designer)</a>
+					</div>
+					<div class="block hover-image" data-fx="1">
+						<span class="block__title">MongoDB</span>
+						<a class="block__link" data-img="img/mongodb-university.jpg" rel="noopener noreferrer" target="_blank" href="https://university.mongodb.com/">MongoDB University (Senior Product Manager)</a>
+					</div>
+					<div class="block hover-image" data-fx="1">
+						<span class="block__title">Personal Projects</span>
+						<a class="block__link" data-img="img/lil-wizards.jpg" rel="noopener noreferrer" target="_blank" href="http://www.lilwizards.com/">Lil Wizards</a>
+					</div>
+					<h3 class="content__subtitle">Inquiries at msdoliner@gmail.com</h3>
+			</div>
+			<script src="js/imagesloaded.pkgd.min.js"></script>
+			<script src="js/charming.min.js"></script>
+			<script src="js/anime.min.js"></script>
+			<script src="js/TweenMax.min.js"></script>
+			<script src="js/app.js"></script>
+		</main>
+	</body>
 </html>
