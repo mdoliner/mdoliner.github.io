@@ -36,8 +36,8 @@ body {
 main {
 	height: 100vh;
 	width: 100%;
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 }
 
 .content {
@@ -52,9 +52,11 @@ main {
 }
 
 .content--fixed {
+	overflow: scroll;
 	position: fixed;
 	top: 0;
 	left: 0;
+	padding-bottom: 2em;
 	background-color: var(--color-content-fixed);
 	background-position: 50% 50%;
 	background-size: cover;
